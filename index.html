@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate greenhouse</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="wrapper">
+        <div class="container">
+            <form id="form">
+                <div class="hedding">
+                    <div class="heading-title">Калькулятор вартості теплиці</div>
+                    <div class="heading-descr">Стартова ціна: 1м.кв = 280.00грн.</div>
+                </div>
+
+                <div class="calc-section">
+                    <label class="checkbox-section">
+                        <span class="title__inline">Площа теплиці</span>
+                        <input type="number" min="17.5" max="157.5" value="17.5" step="3.5" id="square-input">
+                        <span class="title__inline">м.кв</span>
+                    </label>
+                    <input type="range" min="17.5" max="157.5" value="17.5" step="3.5" id="square-range"
+                        class="range-input">
+                </div>
+
+                <div class="calc-section">
+                    <h4 class="section-title">Товщина плівки</h4>
+                    <label class="radio-section">
+                        <input type="radio" class="radio" name="type" value="1" checked>
+                        <div class="title-lite">
+                            100мк.
+                        </div>
+                    </label>
+                    <label class="radio-section">
+                        <input type="radio" class="radio" name="type" value="1.1">
+                        <div class="title-lite">
+                            120мк.
+                            <span class="note">+10%</span>
+                        </div>
+                    </label>
+                    <label class="radio-section">
+                        <input type="radio" class="radio" name="type" value="1.2">
+                        <div class="title-lite">
+                            150мк.
+                            <span class="note">+20%</span>
+                        </div>
+                    </label>
+                    <label class="radio-section">
+                        <input type="radio" class="radio" name="type" value="1.3">
+                        <div class="title-lite">
+                            200мк.
+                            <span class="note">+30%</span>
+                        </div>
+                    </label>
+                </div>
+                <!--Цшна теплиці-->
+                <div class="calc-price">
+                    <div class="calc-price-title">Ціна теплиці</div>
+                    <div class="calc-price-value">
+                        <span id="total-price">0</span>
+                        гривень
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
